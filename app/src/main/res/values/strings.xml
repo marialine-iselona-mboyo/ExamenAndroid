@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ExamenAndroid</string>
+    <string name="btn_start">Start</string>
+    <string name="et_password">Password</string>
+    <string name="et_name">Name</string>
+    <string name="tv_title">Quiz App</string>
+    <string name="tv_signup">Don\'t have an account? Sign up</string>
+    <string name="tv_create_an_account">Create an Account</string>
+    <string name="lets_play_tv">Let\'s Play!</string>
+    <string name="tv_choose_quiz">Choose the kind of Quiz you want to try</string>
+    <string name="generalBtn">General</string>
+    <string name="movies_and_seriesBtn"><![CDATA[Movies & Series]]></string>
+</resources>
