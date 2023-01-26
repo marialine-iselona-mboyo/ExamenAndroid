@@ -19,7 +19,6 @@ import com.google.android.material.navigation.NavigationView;
 public class HomePageActivity extends AppCompatActivity implements View.OnClickListener{
 
 
-
     Button general, ms;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
@@ -48,6 +47,7 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
 
         navController = Navigation.findNavController(this, R.id.navHostFragment);
         NavigationUI.setupWithNavController(navigationView, navController);
+
 
     }
 
