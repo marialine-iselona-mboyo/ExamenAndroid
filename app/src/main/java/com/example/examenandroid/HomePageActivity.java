@@ -1,16 +1,29 @@
 package com.example.examenandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.NavigationUI;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.navigation.NavigationView;
+
 public class HomePageActivity extends AppCompatActivity implements View.OnClickListener{
 
+
+
     Button general, ms;
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    NavController navController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +34,21 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
         general.setOnClickListener(this);
         ms = findViewById(R.id.btn_ms);
         ms.setOnClickListener(this);
+
+
+        drawerLayout = findViewById(R.id.drawerLayout);
+        navigationView = findViewById(R.id.nav_View);
+        navigationView.setItemIconTintList(null);
+        findViewById(R.id.imageMenu).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
+
+        navController = Navigation.findNavController(this, R.id.navHostFragment);
+        NavigationUI.setupWithNavController(navigationView, navController);
+
     }
 
     @SuppressLint("NonConstantResourceId")
