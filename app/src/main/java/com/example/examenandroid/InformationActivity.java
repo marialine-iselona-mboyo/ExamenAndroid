@@ -31,9 +31,9 @@ public class InformationActivity extends AppCompatActivity {
             }
         });
 
+
         navigationView1 = findViewById(R.id.nav_View);
         navigationView1.setItemIconTintList(null);
-
         navController1 = Navigation.findNavController(this, R.id.navHostFragment);
         NavigationUI.setupWithNavController(navigationView1, navController1);
     }
