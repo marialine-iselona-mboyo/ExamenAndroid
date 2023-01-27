@@ -48,8 +48,8 @@ public class MoviesAndSeriesQuestionAnswer {
 
             {"Paris", "Rome", "Madrid"},
             {"2","4","3"},
+            {"Harry","Harvin","Harley"},
             {"Arthur", "Finn", "Tommy"},
-            {"Cardiothoracic Surgeon", "Neurosurgeon", "Trauma Surgeon"},
             {"Snake","Dog","Cat"},
 
 
@@ -77,8 +77,8 @@ public class MoviesAndSeriesQuestionAnswer {
 
             "Paris",
             "3",
+            "Harley",
             "Tommy",
-            "Neurosurgeon",
             "Cat",
 
 
