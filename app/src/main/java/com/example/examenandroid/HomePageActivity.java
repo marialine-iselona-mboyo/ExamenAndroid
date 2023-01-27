@@ -1,16 +1,19 @@
 package com.example.examenandroid;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -23,6 +26,7 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     NavController navController;
+    //NavHostFragment host;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +40,6 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
 
 
         drawerLayout = findViewById(R.id.drawerLayout);
-        navigationView = findViewById(R.id.nav_View);
-        navigationView.setItemIconTintList(null);
         findViewById(R.id.imageMenu).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,8 +47,13 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
             }
         });
 
+
+        //host = getSupportFragmentManager().findFragmentById(R.id.navHostFragment);
+        navigationView = findViewById(R.id.nav_View);
+        navigationView.setItemIconTintList(null);
         navController = Navigation.findNavController(this, R.id.navHostFragment);
         NavigationUI.setupWithNavController(navigationView, navController);
+
 
 
     }
@@ -63,4 +70,5 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
                 break;
         }
     }
+
 }
