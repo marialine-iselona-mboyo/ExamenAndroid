@@ -7,7 +7,6 @@
   <li><a href="#2">General Info</a></li>
   <li><a href="#3">Description</a></li>
   <li><a href="#4">Authors</a></li>
-  <li><a href="#5">Acknolwledgments</a></li>
 </ul>
 
 <h2 id="1">About the project</h2>
@@ -57,6 +56,3 @@ When you are done, you will be able to restart. But, you will be redirected to t
   <li><a href="	
     marialine.iselona.mboyo@student.ehb.be">Marialine ISELONA MBOYO</a></li>
 </ul>
-
-
-
