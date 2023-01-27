@@ -41,6 +41,7 @@ On this page, you can see the quiz choices and a menu. <br>
 With three choices, "Home" - "Information" - "Log out".<br>
 
 When you choose for the type of quiz, you will be able to see the quiz and take part.<br>
+You just have to choose answer, then click on "Next Question". <br>
 ![image](https://user-images.githubusercontent.com/74875856/215074892-3d3baac0-7b15-433d-860c-a295a8a002d1.png)
 <br>
 
